@@ -1,0 +1,58 @@
+/* 
+   DEBUG CSS: Evidenzia la nidificazione degli elementi nel DOM 
+   usando outline colorati per ciascun livello di profondità.
+*/
+
+/* Livello 1: Tutti gli elementi */
+* { outline: 2px dotted red } 
+
+/* Livello 2: Elementi annidati direttamente dentro altri elementi */
+* * { outline: 2px dotted green }
+
+/* Livello 3: Elementi annidati a tre livelli */
+* * * { outline: 2px dotted orange }
+
+/* Livello 4: Elementi annidati a quattro livelli */
+* * * * { outline: 2px dotted blue }
+
+/* Livello 5: Cambia lo stile a solid per una differenziazione visiva più netta */
+* * * * * { outline: 1px solid red }
+
+/* Livello 6 */
+* * * * * * { outline: 1px solid green }
+
+/* Livello 7 */
+* * * * * * * { outline: 1px solid orange }
+
+/* Livello 8 */
+* * * * * * * * { outline: 1px solid blue }
+
+
+/* 
+   HOVER DEBUG: Cambia il bordo degli elementi al passaggio del mouse 
+   per identificare la profondità nel DOM quando si interagisce con la pagina.
+*/
+
+/* Livello 2: Hover - bordo verde solido */
+* *:hover { border:2px solid #89A81E }                   
+
+/* Livello 3: Hover - bordo arancione solido */
+* * *:hover { border:2px solid #F34607 }                 
+
+/* Livello 4: Hover - bordo blu solido */
+* * * *:hover { border:2px solid #5984C3 }               
+
+/* Livello 5: Hover - bordo rosso solido */
+* * * * *:hover { border:2px solid #CD1821 }             
+
+/* Livello 6: Hover - bordo verde tratteggiato */
+* * * * * *:hover { border:2px dotted #89A81E }          
+
+/* Livello 7: Hover - bordo arancione tratteggiato */
+* * * * * * *:hover { border:2px dotted #F34607 }        
+
+/* Livello 8: Hover - bordo blu tratteggiato */
+* * * * * * * *:hover { border:2px dotted #5984C3 }      
+
+/* Livello 9: Hover - bordo rosso tratteggiato */
+* * * * * * * * *:hover { border:2px dotted #CD1821 }
