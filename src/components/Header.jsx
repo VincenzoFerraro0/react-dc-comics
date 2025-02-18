@@ -1,7 +1,7 @@
 const Header = () => {
     return (
-        <header className="container-80">
-            <nav>
+        <header>
+            <nav className="container-80">
                 <figure>
                     <img src="../src/assets/img/dc-logo.png" alt="" />
                 </figure>
