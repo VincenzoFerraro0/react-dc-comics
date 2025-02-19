@@ -24,16 +24,24 @@ ul {
 img {
     display: block;
 }
+
 /* UTILITY */
 .container-80 {
     max-width: 80%;
     margin: 0 auto;
-    
+
 }
+
+#hamburgerMenu {
+    display: none;
+}
+
+
 
 /* COMPONENTS HEADER  */
 header {
     background-color: #fff;
+    
 
 }
 
@@ -42,7 +50,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     text-transform: uppercase;
-    font-weight: 600 ;
+    font-weight: 600;
 }
 
 nav img {
@@ -61,19 +69,21 @@ nav ul li {
 }
 
 nav ul li.active {
-    border-bottom: 3px solid #0582F9 ;
+    border-bottom: 3px solid #0582F9;
 }
 
-nav ul li a.active{
+nav ul li a.active {
     color: #0582F9;
 }
+
 nav ul li a:hover {
     color: #0582F9;
-    
+
 }
+
 nav ul li:hover {
-    border-bottom: 3px solid #0582F9 ;
-    
+    border-bottom: 3px solid #0582F9;
+
 }
 
 nav ul li a {
@@ -90,13 +100,13 @@ nav ul li a {
 }
 
 /* COMPONENTS SECTIONBUY  */
-#comicsIcon{
-    background-color: #0582F9 ;
+#comicsIcon {
+    background-color: #0582F9;
     color: #fff;
-    padding-block: 2rem ;
+    padding-block: 2rem;
     text-transform: uppercase;
     font-weight: 600;
-    
+
 }
 
 #comicsIcon ul {
@@ -115,25 +125,26 @@ nav ul li a {
 #comicsIcon img {
     aspect-ratio: 1;
     width: 50px;
-    
+
 }
 
 /* COMPONENTS FOOTER  */
 
 
-#topFooter{
+#topFooter {
     background-image: url('../src/assets/img/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
-   
+
+
 }
+
 #topFooter .bg-logo {
     background-image: url('../src/assets/img/dc-logo-bg.png');
     background-repeat: no-repeat;
     background-position: right;
-   
+
 }
 
 #topFooter .container-80 {
@@ -141,23 +152,27 @@ nav ul li a {
     gap: 20px;
     padding-block: 2rem;
 }
+
 #topFooter h3 {
     color: #fff;
     text-transform: uppercase;
     margin-block: 0.8rem;
 }
+
 #topFooter a {
     color: gray;
     line-height: 160%;
 }
-#topFooter li{
-   cursor: pointer;
-    
-} 
-#topFooter li:hover a{
+
+#topFooter li {
+    cursor: pointer;
+
+}
+
+#topFooter li:hover a {
     color: #fff;
-    
-} 
+
+}
 
 
 #bottomFooter {
@@ -175,30 +190,30 @@ nav ul li a {
     text-transform: uppercase;
     padding: 15px 20px;
     background: none;
-    color: #fff ;
+    color: #fff;
     font-size: 1rem;
     border: none;
 }
 
-#bottomFooter button.active{
+#bottomFooter button.active {
     border: 2px solid #0582F9;
 }
 
 
- .footerIcon {
+.footerIcon {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
 .footerIcon span {
-    text-transform: uppercase; 
+    text-transform: uppercase;
     font-weight: 700;
     color: #0582F9;
     font-size: 1.4rem;
 }
 
- .footerIcon ul {
+.footerIcon ul {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -208,5 +223,80 @@ nav ul li a {
     width: 24px;
 }
 
+/* RESPONSIVE DESIGN DESKTOP FIRST */
+@media (max-width: 1024px) {
+
+    .container-80 {
+        max-width: 90%;
+        margin: 0 auto;
+    
+    }
+    header {
+        padding-block: 0.5rem;
+        
+    
+    }
+    #navMenu {
+        display: none;
+    }
+
+    #hamburgerMenu {
+        display: inline-block;
+        font-size: 34px;
+    }
+
+    #comicsIcon ul {
+        
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        
+        
+    }
+    #comicsIcon ul li {
+        margin: 20px 0;
+        flex-basis: calc(100% / 2 - 40px ) ;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #comicsIcon img {
+        aspect-ratio: 1;
+        width: 80px;
+    
+    }
+
+    #topFooter .bg-logo {
+        background-size: contain;
+        background-position: center;
+    
+    }
+
+    #topFooter .container-80 {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+    }
+    #topFooter .container-80 div {
+        flex-basis: calc(100% / 2 - 10px );
+        
+    }
+    #bottomFooter .container-80 {
+        padding-block: 1rem;
+       
+    }
+
+    .footerIcon {
+       flex-direction: column;
+       gap: 5px;
+    }
+
+    .footerIcon span {
+        font-size: 1rem;
+    }
+    
 
 
+    
+
+}

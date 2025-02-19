@@ -1,4 +1,5 @@
 import Logo from "./Logo"
+import HamburegerMenu from "./HamburgerMenu";
 
 function NavBar(props) {
 
@@ -6,7 +7,9 @@ function NavBar(props) {
     return (
         <nav className="container-80">
             <Logo />
-            <ul>
+            <HamburegerMenu />
+
+            <ul id="navMenu">
                 {
                     linksGeneral.map((element) => {
                         const {id, text, url, current } = element;
