@@ -52,19 +52,28 @@ nav img {
 nav ul {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 
 }
 
+nav ul li {
+    line-height: 100px;
+}
 
 nav ul li.active {
-    line-height: 100px;
     border-bottom: 3px solid #0582F9 ;
-    
 }
 
 nav ul li a.active{
     color: #0582F9;
+}
+nav ul li a:hover {
+    color: #0582F9;
+    
+}
+nav ul li:hover {
+    border-bottom: 3px solid #0582F9 ;
+    
 }
 
 nav ul li a {
@@ -153,9 +162,6 @@ nav ul li a {
 
 #bottomFooter {
     background-color: #1C1C1C;
-    
-
-    
 }
 
 #bottomFooter .container-80 {
@@ -163,9 +169,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    
 }
+
 #bottomFooter button {
     text-transform: uppercase;
     padding: 15px 20px;
@@ -184,8 +189,8 @@ nav ul li a {
     display: flex;
     align-items: center;
     gap: 20px;
-    
 }
+
 .footerIcon span {
     text-transform: uppercase; 
     font-weight: 700;

@@ -1,45 +1,23 @@
-import logo from "../assets/img/dc-logo.png"
+
 
 function Header() {
+
+    //CENTRALIZZAZIONE DEI DATI
+    const links = [
+        { id: 1, text: 'Characters', url: '#', current: false },
+        { id: 2, text: 'Comics', url: '#', current: false },
+        { id: 3, text: 'Movies', url: '#', current: false },
+        { id: 4, text: 'Tv', url: '#', current: false },
+        { id: 5, text: 'Games', url: '#', current: false },
+        { id: 6, text: 'Collectibles', url: '#', current: false },
+        { id: 7, text: 'Videos', url: '#', current: false },
+        { id: 8, text: 'Fans', url: '#', current: false },
+        { id: 9, text: 'News', url: '#', current: false },
+        { id: 10, text: 'Shop', url: '#', current: false }
+    ]
     return (
         <header>
-            <nav className="container-80">
-                <figure>
-                    <img src={logo} alt="logo" />
-                </figure>
-                <ul>
-                    <li className="active">
-                        <a  className="active" href="#">characters</a>
-                    </li>
-                    <li>
-                        <a href="#">comics</a>
-                    </li>
-                    <li>
-                        <a href="#">movies</a>
-                    </li>
-                    <li>
-                        <a href="#">tv</a>
-                    </li>
-                    <li>
-                        <a href="#">games</a>
-                    </li>
-                    <li>
-                        <a href="#">collectibles</a>
-                    </li>
-                    <li>
-                        <a href="#">videos</a>
-                    </li>
-                    <li>
-                        <a href="#">fans</a>
-                    </li>
-                    <li>
-                        <a href="#">news</a>
-                    </li>
-                    <li>
-                        <a href="#">shop</a>
-                    </li>
-                </ul>
-            </nav>
+           
 
         </header>
     )
