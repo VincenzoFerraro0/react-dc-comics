@@ -4,7 +4,7 @@ function Header() {
 
     //CENTRALIZZAZIONE DEI DATI
     const links = [
-        { id: 1, text: 'Characters', url: '#', current: false },
+        { id: 1, text: 'Characters', url: '#', current: true },
         { id: 2, text: 'Comics', url: '#', current: false },
         { id: 3, text: 'Movies', url: '#', current: false },
         { id: 4, text: 'Tv', url: '#', current: false },
@@ -17,7 +17,7 @@ function Header() {
     ]
     return (
         <header>
-            <NavBar />
+            <NavBar links={links} />
         </header>
     )
 }
