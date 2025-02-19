@@ -2,11 +2,11 @@ import NavBar from "./NavBar"
 
 function Header(props) {
 
-    const { links } = props
+    const { linksGeneral  } = props
 
     return (
         <header>
-            <NavBar links={links} />
+            <NavBar linksGeneral={ linksGeneral  } />
         </header>
     )
 }
