@@ -1,13 +1,15 @@
-const Header = () => {
+import logo from "../assets/img/dc-logo.png"
+
+function Header() {
     return (
         <header>
             <nav className="container-80">
                 <figure>
-                    <img src="../src/assets/img/dc-logo.png" alt="" />
+                    <img src={logo} alt="logo" />
                 </figure>
                 <ul>
-                    <li>
-                        <a href="#">characters</a>
+                    <li className="active">
+                        <a  className="active" href="#">characters</a>
                     </li>
                     <li>
                         <a href="#">comics</a>

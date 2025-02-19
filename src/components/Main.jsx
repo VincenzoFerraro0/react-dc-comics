@@ -1,9 +1,9 @@
 import SectionBuy from "./SectionBuy"
 
-const Main = () => {
+function Main() {
     return (
             <main>
-                <section className="section-black">
+                <section className="section-content">
                     <div className="container-80">
                         <h2> --Content goes here-- </h2>
                     </div>

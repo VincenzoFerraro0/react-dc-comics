@@ -1,39 +1,45 @@
-const SectionBuy = () => {
+import comics from "../assets/img/buy-comics-digital-comics.png"
+import merch from "../assets/img/buy-comics-merchandise.png"
+import sub from "../assets/img/buy-comics-subscriptions.png"
+import shop from "../assets/img/buy-comics-shop-locator.png"
+import buy from "../assets/img/buy-dc-power-visa.svg"
+
+function SectionBuy() {
     return (
-        <section className="section-azzure">
+        <section id="comicsIcon">
             <div className="container-80">
-                <div className="container-buy">
-                    <div>
+                <ul>
+                    <li>
                         <figure>
-                            <img src="../src/assets/img/buy-comics-digital-comics.png" alt="" />
+                            <img src={comics} alt="icon digital comics" />
                         </figure>
                         <span>digital comics</span>
-                    </div>
-                    <div>
+                    </li>
+                    <li>
                         <figure>
-                            <img src="../src/assets/img/buy-comics-merchandise.png" alt="" />
+                            <img src={merch} alt="icon dc merchandise" />
                         </figure>
-                        <span>DC MERCHANDISE</span>
-                    </div>
-                    <div>
+                        <span>dc merchandise</span>
+                    </li>
+                    <li>
                         <figure>
-                            <img src="../src/assets/img/buy-comics-shop-locator.png" alt="" />
+                            <img src={sub} alt="icon subscription" />
                         </figure>
-                        <span>SUBSCRIPTION</span>
-                    </div>
-                    <div>
+                        <span>subscription</span>
+                    </li>
+                    <li>
                         <figure>
-                            <img src="../src/assets/img/buy-comics-subscriptions.png" alt="" />
+                            <img src={shop} alt="icon comk shop locatot" />
                         </figure>
-                        <span>COMK SHOP LOCATOT</span>
-                    </div>
-                    <div>
+                        <span>comk shop locatot</span>
+                    </li>
+                    <li>
                         <figure>
-                            <img src="../src/assets/img/buy-dc-power-visa.svg" alt="" />
+                            <img src={buy} alt="icon bc power visa" />
                         </figure>
-                        <span>BC POWER VISA</span>
-                    </div>
-                </div>
+                        <span>bc power visa</span>
+                    </li>
+                </ul>
 
             </div>
 
