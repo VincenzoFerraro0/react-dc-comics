@@ -1,12 +1,14 @@
 import SectionBuy from "./SectionBuy"
+import SectionComics from "./SectionComics"
 import SectionJumbo from "./SectionJumbo"
-import SectionProducts from "./SectionProducts"
 
-function Main() {
+
+function Main({comics}) {
+   
     return (
             <main>
                 <SectionJumbo /> 
-                <SectionProducts />
+                <SectionComics comics={comics} />
                 <SectionBuy />
             </main>
     )
