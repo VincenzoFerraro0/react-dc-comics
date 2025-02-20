@@ -7,6 +7,7 @@ import iconPeri from "/footer-periscope.png"
 import MenuFooter from "./MenuFooter"
 
 
+
 function Footer({links}) {
     
     return (
@@ -18,7 +19,7 @@ function Footer({links}) {
             </section>
             <section id="bottomFooter">
                 <div className="container-80">
-                    <button className="active">
+                    <button className="btn active">
                         sing-up now!
                     </button>
                     <div className="footerIcon">

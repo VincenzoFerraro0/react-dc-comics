@@ -11,7 +11,9 @@ function ComicsList ({comics}) {
                 })
             }
 
-            
+             <button>
+                    load more
+            </button>
         </div>
         
     )

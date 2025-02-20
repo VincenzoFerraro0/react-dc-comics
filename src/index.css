@@ -41,7 +41,7 @@ img {
 /* COMPONENTS HEADER  */
 header {
     background-color: #fff;
-    
+
 
 }
 
@@ -94,20 +94,18 @@ nav ul li a {
 /* COMPONENTS MAIN  */
 
 /* COMPONENTS SECTIONJUMBO  */
-#bg-jumbotron{
+#bg-jumbotron {
     background-image: url('../src/assets/img/jumbotron.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 350px;
 }
 
-/* COMPONENTS SECTIONPRODUCTS  */
+/* COMPONENTS SECTIONCOMICS  */
 #sectionComics {
     background-color: #1C1C1C;
-    /* padding-block: 2rem; */
-    
     color: #fff;
-    
+
 }
 
 #sectionComics .container-80 {
@@ -123,8 +121,9 @@ nav ul li a {
     background-color: #0582F9;
     padding: 10px 25px;
     text-transform: uppercase;
-    
+
 }
+
 
 
 #comicsList {
@@ -132,7 +131,7 @@ nav ul li a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-   
+
 
 }
 
@@ -151,6 +150,20 @@ nav ul li a {
     text-transform: uppercase;
     word-wrap: break-word;
 }
+
+#comicsList button {
+    width: 15%;
+    margin: 0 auto;
+    padding: 15px 10px;
+    border: none;
+    background-color: #0582F9;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+
 
 
 /* COMPONENTS SECTIONBUY  */
@@ -283,13 +296,15 @@ nav ul li a {
     .container-80 {
         max-width: 90%;
         margin: 0 auto;
-    
+
     }
+
     header {
         padding-block: 0.5rem;
-        
-    
+
+
     }
+
     #navMenu {
         display: none;
     }
@@ -300,16 +315,17 @@ nav ul li a {
     }
 
     #comicsIcon ul {
-        
+
         flex-wrap: wrap;
         gap: 20px;
         justify-content: space-around;
-        
-        
+
+
     }
+
     #comicsIcon ul li {
         margin: 20px 0;
-        flex-basis: calc(100% / 2 - 40px ) ;
+        flex-basis: calc(100% / 2 - 40px);
         flex-direction: column;
         gap: 20px;
     }
@@ -317,40 +333,42 @@ nav ul li a {
     #comicsIcon img {
         aspect-ratio: 1;
         width: 80px;
-    
+
     }
 
     #topFooter .bg-logo {
         background-size: contain;
         background-position: center;
-    
+
     }
 
     #topFooter .container-80 {
         flex-wrap: wrap;
         justify-content: flex-start;
-        
+
     }
+
     #topFooter .container-80 div {
-        flex-basis: calc(100% / 2 - 10px );
-        
+        flex-basis: calc(100% / 2 - 10px);
+
     }
+
     #bottomFooter .container-80 {
         padding-block: 1rem;
-       
+
     }
 
     .footerIcon {
-       flex-direction: column;
-       gap: 5px;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .footerIcon span {
         font-size: 1rem;
     }
-    
 
 
-    
+
+
 
 }

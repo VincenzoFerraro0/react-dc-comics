@@ -10,7 +10,7 @@ function SectionComics ({comics}) {
                 
                 <ComicsList comics={comics} />
                 
-                
+               
             </div>
             
         </section>
