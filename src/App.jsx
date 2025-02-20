@@ -6,14 +6,12 @@ import arrayComics from "./data/comics"
 
 
 function App() {
-      //CENTRALIZZAZIONE DEI DATI
+
+    //CENTRALIZZAZIONE DEI DATI
       const links = Links;
       const comics = arrayComics
 
       
-     
-      
-
   return (
     <>
         <Header links={ links }/>

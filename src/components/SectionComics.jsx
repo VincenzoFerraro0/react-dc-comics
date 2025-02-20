@@ -1,4 +1,4 @@
-import comics from "../data/comics"
+
 import ComicsList from "./ComicsList"
 
 function SectionComics ({comics}) {
@@ -7,8 +7,12 @@ function SectionComics ({comics}) {
         <section id="sectionComics">
             <div className="container-80">
                 <h2 className="label">current series</h2>
+                
+                <ComicsList comics={comics} />
+                
+                
             </div>
-            <ComicsList comics={comics} />
+            
         </section>
     )
 }
