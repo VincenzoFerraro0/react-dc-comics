@@ -1,19 +1,19 @@
-import iconFb from "../assets/img/footer-facebook.png"
-import iconTw from "../assets/img/footer-twitter.png"
-import iconYt from "../assets/img/footer-youtube.png"
-import iconPin from "../assets/img/footer-pinterest.png"
-import iconPeri from "../assets/img/footer-periscope.png"
+import iconFb from "/footer-facebook.png"
+import iconTw from "/footer-twitter.png"
+import iconYt from "/footer-youtube.png"
+import iconPin from "/footer-pinterest.png"
+import iconPeri from "/footer-periscope.png"
 
 import MenuFooter from "./MenuFooter"
 
 
-function Footer(props) {
-    const { linksGeneral, linksShop, linksDc, linksSites } = props;
+function Footer({links}) {
+    
     return (
         <footer>
             <section id="topFooter">
                 <div className="container-80 bg-logo">
-                    <MenuFooter linksGeneral={ linksGeneral } linksShop={linksShop} linksDc={linksDc} linksSites={linksSites} />
+                    <MenuFooter links={links} />
                 </div>
             </section>
             <section id="bottomFooter">

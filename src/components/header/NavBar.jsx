@@ -1,9 +1,7 @@
-import Logo from "./Logo"
-import HamburegerMenu from "./HamburgerMenu";
+import Logo from "../Logo.jsx"
+import HamburegerMenu from "./HamburgerMenu.jsx"
 
-function NavBar(props) {
-
-    const { linksGeneral  } = props
+function NavBar({linksGeneral}) {
     return (
         <nav className="container-80">
             <Logo />

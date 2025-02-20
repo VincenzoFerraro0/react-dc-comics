@@ -1,8 +1,7 @@
-function MenuFooter(props) {
-    const { linksGeneral, linksShop, linksDc, linksSites } = props;
+function MenuFooter({links}) {
+    const { general, shop, dc, sites } = links;
 
-    // Filtra l'array per escludere l'elemento con id 10
-    const filteredLinks = linksGeneral.filter((element) => element.id !== 10);
+    
 
     return (
         <>
@@ -10,7 +9,7 @@ function MenuFooter(props) {
                 <h3>dc comics</h3>
                 <ul>
                     {
-                        filteredLinks.map((element) => {
+                        general.map((element) => {
                             const { id, text, url } = element;
                             return (
                                 <li key={id}>
@@ -23,7 +22,7 @@ function MenuFooter(props) {
                 <h3>shop</h3>
                 <ul>
                     {
-                        linksShop.map((element) => {
+                        shop.map((element) => {
                             const { id, text, url } = element;
                             return (
                                 <li key={id}>
@@ -38,7 +37,7 @@ function MenuFooter(props) {
                 <h3>dc</h3>
                 <ul>
                     {
-                        linksDc.map((element) => {
+                        dc.map((element) => {
                             const { id, text, url } = element;
                             return (
                                 <li key={id}>
@@ -53,7 +52,7 @@ function MenuFooter(props) {
                 <h3>sites</h3>
                 <ul>
                     {
-                        linksSites.map((element) => {
+                        sites.map((element) => {
                             const { id, text, url } = element;
                             return (
                                 <li key={id}>
