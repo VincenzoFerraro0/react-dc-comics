@@ -1,14 +1,12 @@
 import SectionBuy from "./SectionBuy"
+import SectionJumbo from "./SectionJumbo"
+import SectionProducts from "./SectionProducts"
 
 function Main() {
     return (
             <main>
-                <section className="section-content">
-                    <div className="container-80">
-                        <h2> --Content goes here-- </h2>
-                    </div>
-                </section>
-
+                <SectionJumbo /> 
+                <SectionProducts />
                 <SectionBuy />
             </main>
     )

@@ -1,8 +1,5 @@
 function MenuFooter({links}) {
     const { general, shop, dc, sites } = links;
-
-    
-
     return (
         <>
             <div>
