@@ -1,6 +1,6 @@
-import Header from "./components/header/Header"
+import Header from "./section/Header"
 import Main from "./components/Main"
-import Footer from "./components/footer/Footer"
+import Footer from "./section/Footer"
 import Links from "./data/links"
 import arrayComics from "./data/comics"
 

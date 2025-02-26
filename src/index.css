@@ -98,6 +98,7 @@ nav ul li a {
     background-image: url('../src/assets/img/jumbotron.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    
     min-height: 350px;
 }
 
@@ -130,18 +131,18 @@ nav ul li a {
     padding-block: 3rem;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 20px;
-
-
 }
 
 #comicsList .comicCard {
     flex-basis: calc(100% / 6 - 20px);
+    margin-block: 20px;
 }
 
 .comicCard img {
     width: 100%;
-    aspect-ratio: 1;
+    aspect-ratio: 3/4;
 }
 
 .comicCard span {
@@ -367,6 +368,9 @@ nav ul li a {
         font-size: 1rem;
     }
 
+    #comicsList .comicCard {
+        flex-basis: calc(100% / 2 - 20px);
+    }
 
 
 

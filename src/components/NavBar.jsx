@@ -1,4 +1,4 @@
-import Logo from "../Logo.jsx"
+import Logo from "./Logo.jsx"
 import HamburegerMenu from "./HamburgerMenu.jsx"
 
 function NavBar({linksGeneral}) {
